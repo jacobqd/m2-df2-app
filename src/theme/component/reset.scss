@@ -1,0 +1,34 @@
+// 针对ionic的默认调整，更适合使用习惯
+
+.can-go-back > m2-layout-header ion-header .sc-ion-back-button-ios-h {
+  display: block;
+}
+.can-go-back > m2-layout-header ion-header .sc-ion-back-button-md-h {
+  display: block;
+}
+ ion-toolbar {
+  --padding-top: 24px;
+ }
+
+ion-toast {
+  top: 20px;
+  --background: var(--ion-color-step-800, #fff);
+  --button-color: var(--ion-color-theme);
+  --color: #555;
+}
+
+ion-toast.success {
+  --button-color: var(--ion-color-success);
+}
+
+ion-toast.info {
+  --button-color: var(--ion-color-theme);
+}
+
+ion-toast.warning {
+  --button-color: var(--ion-color-warning);
+}
+
+ion-toast.danger {
+  --button-color: var(--ion-color-danger);
+}

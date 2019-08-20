@@ -1,0 +1,94 @@
+@function pxToRem($px) {
+  @return $px /2 * 1px;
+}
+
+ion-content {
+  --background: rgba(0, 0, 0, 0);
+}
+
+.modal-box {
+  background-color: rgba(0, 0, 0, .6);
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-container {
+  width: pxToRem(607);
+}
+
+.modal-header {
+  background: url("../../../../../assets/imgs/alert/updatebg.png");
+  background-size: contain;
+  height: pxToRem(370);
+  padding-top: pxToRem(151);
+  padding-left: pxToRem(60);
+
+  color: rgba(255, 255, 255, 1);
+
+  .title1 {
+    //font-size: pxToRem(40);
+    //font-weight: bold;
+    font-size: pxToRem(36);
+    margin: 0;
+  }
+
+  .title2 {
+    font-size: pxToRem(32);
+    //font-size: pxToRem(36);
+    margin: 0;
+  }
+}
+
+.modal-body {
+  background-color: white;
+  padding: pxToRem(40) pxToRem(60);
+  color: #555;
+  font-size: pxToRem(28);
+}
+
+.modal-footer {
+  background-color: white;
+  border-radius: 0 0 pxToRem(14) pxToRem(14);
+  margin: auto;
+  text-align: center;
+}
+
+.enterBtn {
+  --border-radius: 50px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+.cleanBtn {
+  --border-radius: 50px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+
+.progress-box {
+  //visibility: hidden;
+  padding: 0 pxToRem(60) pxToRem(20) pxToRem(60);
+}
+
+
+.progress-text {
+  font-size: pxToRem(24);
+  color: #999999;
+  padding-bottom: pxToRem(10);
+}
+
+
+.progress-bg {
+  width: 100%;
+  height: pxToRem(4);
+  background: #e8e8e8;
+
+}
+
+.progress-f {
+  //width: 50%;
+  height: pxToRem(4);
+  //background: var(--ion-color-theme);
+  background: #189eff;
+}

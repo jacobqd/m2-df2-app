@@ -1,0 +1,56 @@
+
+.scroll-content {
+  margin-top: 0 !important;
+}
+.logo {
+  width: 70%;
+  height: auto;
+  padding-top: 9vh;
+  display: block;
+  margin: auto;
+  margin-bottom: 15vh;
+}
+.small-logo {
+  width: 20%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: 1rem;
+  margin-bottom: 15vh;
+}
+
+.slide-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: transparent;
+}
+.slide-zoom {
+  background: rgba(32, 32, 32, 0.2) !important;
+  height: 100%;
+}
+
+ion-slides {
+  height: 100vh;
+}
+
+ion-item  {
+  --background: transparent;
+}
+ion-input {
+  --background: transparent;
+  --color: var(--ion-color-light);
+}
+::-webkit-input-placeholder {
+  color: white !important;
+}
+.login-container {
+  color: white;
+  position: absolute;
+  top: 0;
+  padding: 10vw;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+}

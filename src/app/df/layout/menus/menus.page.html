@@ -1,0 +1,26 @@
+<ion-menu side="start" menuId="first">
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-title>菜单</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <ion-item-group *ngFor="let menuL1 of sysMenu">
+                <ion-item-divider>
+                    <ion-label>{{ menuL1.title }}</ion-label>
+                </ion-item-divider>
+
+                <ion-item *ngFor="let menuL2 of menuL1.children">
+                    <ion-label> {{ menuL2.title}}</ion-label>
+                </ion-item>
+
+            </ion-item-group>
+
+
+        </ion-list>
+
+    </ion-content>
+</ion-menu>
+<ion-router-outlet main></ion-router-outlet>
+

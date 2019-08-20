@@ -1,0 +1,75 @@
+// 基础属性配置
+
+
+// 公共级别
+// 默认为2x图
+@function pxToRem($px) {
+  // 转换到px
+  //@return $px /2 * 1px;
+
+  // 转换到rem
+  @return $px /2/16* 1rem;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 私有级别
+/*.pageBg {
+  background-color: #eef2f3 !important;
+}*/
+
+.bg-color-eef2f3 {
+  background-color: #eef2f3 !important;
+}
+
+
+.card-box {
+  padding: 0 pxToRem(28);
+  min-height: 100%;
+}
+
+.card {
+  width: 100%;
+  padding: 0 pxToRem(20);
+  margin: 0 0 pxToRem(74) 0;
+  //float: left;
+
+  .card-content {
+    background-color: white;
+    border-radius: pxToRem(6);
+    padding: pxToRem(32) pxToRem(30);
+
+    border: 1px solid #f3f3f3;
+    //box-shadow: 0 pxToRem(4) pxToRem(10) 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 pxToRem(60) 0 rgba(224, 239, 238, 0.2);
+  }
+
+
+  .card-img {
+    border: 1px solid #f3f3f3;
+    width: 100%;
+    height: auto;
+    border-radius: pxToRem(8);
+  }
+
+
+  .text3 {
+    color: #c6cacd;
+    line-height: 1;
+    font-size: pxToRem(22);
+  }
+}
+
+.title {
+  color: #434b4d;
+  text-align: center;
+  line-height: 1;
+  padding-top: pxToRem(30);
+
+  /*    padding-top: pxToRem(40);
+      padding-bottom: pxToRem(24);*/
+  font-size: pxToRem(22);
+}
+
+ion-content {
+  --background: #eef2f3;
+}

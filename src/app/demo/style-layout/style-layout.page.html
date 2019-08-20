@@ -1,0 +1,65 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      样式布局
+    </ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+
+<ion-content>
+    <div *ngIf="navListShow">
+        <ion-list>
+            <ion-list-header *ngFor="let typeItem0 of _typeArr,let i=index" (click)="navFun(typeItem0.val)">
+                <ion-label >{{ typeItem0.name}}</ion-label>
+            </ion-list-header>
+        </ion-list>
+    </div>
+
+
+    <div *ngIf="!navListShow">
+        <div class="layout-box-horizontal items-center">
+            <div class="layout-box-responsive">
+                <ion-searchbar animated placeholder="请输入关键字" (ionChange)="search($event)"
+                               [(ngModel)]="searchValue"></ion-searchbar>
+            </div>
+            <div style="width: 100px">
+                <ion-select cancelText="取消" okText="确定" [(ngModel)]="selectVal" (ionChange)="ionChange($event)">
+                    <ion-select-option *ngFor="let typeItem of _typeArr,let i=index"
+                                       value="{{typeItem.val}}">{{ typeItem.name}}</ion-select-option>
+                </ion-select>
+            </div>
+        </div>
+
+        <ion-grid no-padding>
+            <ion-row no-padding>
+                <ion-col no-padding size="6">
+                    <div *ngFor="let item of pageInfo,let i=index">
+                        <div class="card" *ngIf="i%2==0">
+                            <div class="card-content">
+                                <img src="{{ item.imgUrl }}" class="card-img" alt="style-layout.png"
+                                     (click)="jumpPage(item)">
+                                <div class="title">{{item.name}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </ion-col>
+
+
+                <ion-col no-padding size="6">
+                    <div *ngFor="let item of pageInfo,let i=index">
+                        <div class="card" *ngIf="i%2!=0">
+                            <div class="card-content">
+                                <img src="{{ item.imgUrl }}" class="card-img" alt="style-layout.png"
+                                     (click)="jumpPage(item)">
+                                <div class="title">{{item.name}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </div>
+
+</ion-content>

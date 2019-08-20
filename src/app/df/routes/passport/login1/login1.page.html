@@ -1,0 +1,25 @@
+
+<ion-content>
+  <ion-slides pager="false"  [options]="options">
+    <ion-slide class="slide-background" *ngFor="let background of backgrounds" [ngStyle]="{'background-image': 'url(' + background +')'}">
+    </ion-slide>
+  </ion-slides>
+  <div class="login-container">
+    <img [class.logo]="true"  src="assets/imgs/m2logo.png" />
+
+      <ion-item>
+        <ion-label color="light">账号</ion-label>
+        <ion-input type="text" placeholder="请输入工号或手机号" [(ngModel)]="account.username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="light">密码</ion-label>
+        <ion-input type="password" placeholder="请输入密码" [(ngModel)]="account.password"></ion-input>
+      </ion-item>
+
+    <ion-button (click)="doLogin()" margin-top>授权登陆</ion-button>
+
+
+  </div>
+
+
+</ion-content>

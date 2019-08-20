@@ -1,0 +1,15 @@
+<ion-header *ngIf="!is_nohead_mode" mode="ios">
+  <ion-toolbar [color]="'primary'">
+    <ion-title >
+      <ng-content select="m2-layout-header-title"></ng-content>
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button *ngIf="is_menus_mode"></ion-menu-button>
+      <ion-back-button *ngIf="!is_menus_mode"></ion-back-button>
+      <ng-content select="m2-layout-header-button-start"></ng-content>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ng-content select="m2-layout-header-button-end"></ng-content>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

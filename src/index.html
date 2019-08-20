@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ionic App</title>
+
+  <base href="/" />
+
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!--  <script src="assets/vconsole.min.js"></script>-->
+<!--  <script>-->
+<!--    var vConsole = new VConsole();-->
+<!--  </script>-->
+
+</head>
+
+<body>
+  <app-root></app-root>
+<!--<script>-->
+<!--    alert(window.devicePixelRatio);-->
+<!--    alert(document.documentElement.clientWidth * window.devicePixelRatio / 10);-->
+<!--</script>-->
+  <script type="text/javascript" >
+    window.localStorage.setItem("index" , new Date().toISOString());
+    console.log("Angular框架开始加载时间：" + new Date());
+  </script>
+<!--  <script type="text/javascript" src="https://api.map.baidu.com/getscript?v=3.0&ak=o9NyErT5RAFGCX3SkyuY210i0GVnqVqw"></script>-->
+
+<!--  <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.14&key=8c4a7a97d78253620a34842a9f9e8203"></script>-->
+
+  <script src="assets/jweixin-1.4.0.js"></script>
+</body>
+
+</html>

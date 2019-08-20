@@ -1,0 +1,83 @@
+@import "../variables";
+
+// 默认边框
+.border-none{border:none !important;}
+.border,.border-top-bottom,.border-top { border-top: 1px solid var(--border-color-default)}
+.border,.border-top-bottom,.border-bottom { border-bottom: 1px solid var(--border-color-default)}
+.border,.border-right-left,.border-right { border-right: 1px solid var(--border-color-default)}
+.border,.border-right-left,.border-left { border-left: 1px solid var(--border-color-default)}
+
+// 边框宽度
+.border-width-2{border-width:2px}
+.border-width-4{border-width:4px}
+.border-width-6{border-width:6px}
+
+//圆角
+.border-radius,.border-top-radius,.border-top-left-radius{border-top-left-radius: 4px;}
+.border-radius,.border-top-radius,.border-top-right-radius{border-top-right-radius: 4px;}
+.border-radius,.border-bottom-radius,.border-bottom-left-radius{border-bottom-left-radius: 4px;}
+.border-radius,.border-bottom-radius,.border-bottom-right-radius{border-bottom-right-radius: 4px;}
+
+// 边框类型
+.border-style-solid{border-style:solid !important} //实线
+.border-style-dashed{border-style:dashed !important} //虚线
+//边框颜色
+/** theme **/
+.border-theme { border-color : var(--ion-color-theme) !important; }
+.border-theme-contrast { border-color : var(--ion-color-theme-contrast) !important; }
+.border-theme-shade { border-color : var(--ion-color-theme-shade) !important; }
+.border-theme-tint { border-color : var(--ion-color-theme-tint) !important; }
+
+/** primary **/
+.border-primary { border-color : var(--ion-color-primary) !important; }
+.border-primary-contrast { border-color : var(--ion-color-primary-contrast) !important; }
+.border-primary-shade { border-color : var(--ion-color-primary-shade) !important; }
+.border-primary-tint { border-color : var(--ion-color-primary-tint) !important; }
+
+/** secondary **/
+.border-secondary { border-color : var(--ion-color-secondary) !important; }
+.border-secondary-contrast { border-color : var(--ion-color-secondary-contrast) !important; }
+.border-secondary-shade { border-color : var(--ion-color-secondary-shade) !important; }
+.border-secondary-tint { border-color : var(--ion-color-secondary-tint) !important; }
+
+/** tertiary **/
+.border-tertiary { border-color : var(--ion-color-tertiary) !important; }
+.border-tertiary-contrast { border-color : var(--ion-color-tertiary-contrast) !important; }
+.border-tertiary-shade { border-color : var(--ion-color-tertiary-shade) !important; }
+.border-tertiary-tint { border-color : var(--ion-color-tertiary-tint) !important; }
+
+/** success **/
+.border-success { border-color : var(--ion-color-success) !important; }
+.border-success-contrast { border-color : var(--ion-color-success-contrast) !important; }
+.border-success-shade { border-color : var(--ion-color-success-shade) !important; }
+.border-success-tint { border-color : var(--ion-color-success-tint) !important; }
+
+/** warning **/
+.border-warning { border-color : var(--ion-color-warning) !important; }
+.border-warning-contrast { border-color : var(--ion-color-warning-contrast) !important; }
+.border-warning-shade { border-color : var(--ion-color-warning-shade) !important; }
+.border-warning-tint { border-color : var(--ion-color-warning-tint) !important; }
+
+/** danger **/
+.border-danger { border-color : var(--ion-color-danger) !important; }
+.border-danger-contrast { border-color : var(--ion-color-danger-contrast) !important; }
+.border-danger-shade { border-color : var(--ion-color-danger-shade) !important; }
+.border-danger-tint { border-color : var(--ion-color-danger-tint) !important; }
+
+/** dark **/
+.border-dark { border-color : var(--ion-color-dark) !important; }
+.border-dark-contrast { border-color : var(--ion-color-dark-contrast) !important; }
+.border-dark-shade { border-color : var(--ion-color-dark-shade) !important; }
+.border-dark-tint { border-color : var(--ion-color-dark-tint) !important; }
+
+/** medium **/
+.border-medium { border-color : var(--ion-color-medium) !important; }
+.border-medium-contrast { border-color : var(--ion-color-medium-contrast) !important; }
+.border-medium-shade { border-color : var(--ion-color-medium-shade) !important; }
+.border-medium-tint { border-color : var(--ion-color-medium-tint) !important; }
+
+/** light **/
+.border-light { border-color : var(--ion-color-light) !important; }
+.border-light-contrast { border-color : var(--ion-color-light-contrast) !important; }
+.border-light-shade { border-color : var(--ion-color-light-shade) !important; }
+.border-light-tint { border-color : var(--ion-color-light-tint) !important; }

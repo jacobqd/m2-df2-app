@@ -1,0 +1,7 @@
+{
+  "name": "m2app-df2",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

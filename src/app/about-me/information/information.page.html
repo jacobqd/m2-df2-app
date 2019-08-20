@@ -1,0 +1,207 @@
+<m2-layout-header>
+  <m2-layout-header-title>系统信息</m2-layout-header-title>
+</m2-layout-header>
+
+<ion-content>
+  <ion-list lines="full" inset>
+    <ion-list-header>
+      <ion-text  color="primary">
+        <h5>本机信息</h5>
+      </ion-text>
+    </ion-list-header>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        平台名称
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ platformInfo?.platform }}
+      </ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        操作系统
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ platformInfo?.osName }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        操作系统版本
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ platformInfo?.osVersion }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text cslot="start" color="dark" class="font-size-14">
+        Cordova版本
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ platformInfo?.cordovaVersion }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        机器型号
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ platformInfo?.model }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        架构
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ platformInfo?.manufacturer }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text cslot="start" color="dark" class="font-size-14">
+        UUID
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ platformInfo?.uuid }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        序列号
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ platformInfo?.serial }}
+      </ion-text>
+    </ion-item>
+  </ion-list>
+
+  <div class="bg-light" style="height: 1rem"></div>
+
+  <ion-list lines="full" inset="true">
+    <ion-list-header>
+      <ion-text color="primary"><h5>登陆信息 </h5></ion-text>
+    </ion-list-header>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        账号ID
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ user.id }}
+      </ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        账号
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ user.name }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        所属组织
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ user.office.name }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text cslot="start" color="dark" class="font-size-14">
+        微信昵称
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ user.wechatInfo?.wechatNickName }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        微信openId
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ user.wechatInfo?.wechatOpenId }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        微信unionId
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ user.wechatInfo?.wechatUnionId }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text cslot="start" color="dark" class="font-size-14">
+        钉钉昵称
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ user.dingtalkInfo?.ddName }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        钉钉openId
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ user.dingtalkInfo?.ddUserId }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        钉钉留存手机号
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ user.dingtalkInfo?.ddMobile }}
+      </ion-text>
+    </ion-item>
+  </ion-list>
+
+  <div class="bg-light" style="height: 1rem"></div>
+
+  <ion-list lines="full" inset="true">
+    <ion-list-header>
+      <ion-text color="primary"><h5>加载分析 </h5></ion-text>
+    </ion-list-header>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        Cordova加载Index
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ appTimer.index }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        AppModule初始化
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ appTimer.appModule }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        AppComponent初始化
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ appTimer.appComponent }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        HomeComponent初始化
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ appTimer.homeComponent }}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text slot="start" color="dark" class="font-size-14">
+        SplashScreen关闭
+      </ion-text>
+      <ion-text slot="end" color="medium" class="font-size-12">
+        {{ appTimer.splashScreen }}
+      </ion-text>
+    </ion-item>
+  </ion-list>
+</ion-content>

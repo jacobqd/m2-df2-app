@@ -1,0 +1,62 @@
+@import "../variables";
+
+/** theme **/
+.bg-theme { background-color : var(--ion-color-theme) !important; }
+.bg-theme-contrast { background-color : var(--ion-color-theme-contrast) !important; }
+.bg-theme-shade { background-color : var(--ion-color-theme-shade) !important; }
+.bg-theme-tint { background-color : var(--ion-color-theme-tint) !important; }
+
+
+/** primary **/
+.bg-primary { background-color : var(--ion-color-primary) !important; }
+.bg-primary-contrast { background-color : var(--ion-color-primary-contrast) !important; }
+.bg-primary-shade { background-color : var(--ion-color-primary-shade) !important; }
+.bg-primary-tint { background-color : var(--ion-color-primary-tint) !important; }
+
+/** secondary **/
+.bg-secondary { background-color : var(--ion-color-secondary) !important; }
+.bg-secondary-contrast { background-color : var(--ion-color-secondary-contrast) !important; }
+.bg-secondary-shade { background-color : var(--ion-color-secondary-shade) !important; }
+.bg-secondary-tint { background-color : var(--ion-color-secondary-tint) !important; }
+
+/** tertiary **/
+.bg-tertiary { background-color : var(--ion-color-tertiary) !important; }
+.bg-tertiary-contrast { background-color : var(--ion-color-tertiary-contrast) !important; }
+.bg-tertiary-shade { background-color : var(--ion-color-tertiary-shade) !important; }
+.bg-tertiary-tint { background-color : var(--ion-color-tertiary-tint) !important; }
+
+/** success **/
+.bg-success { background-color : var(--ion-color-success) !important; }
+.bg-success-contrast { background-color : var(--ion-color-success-contrast) !important; }
+.bg-success-shade { background-color : var(--ion-color-success-shade) !important; }
+.bg-success-tint { background-color : var(--ion-color-success-tint) !important; }
+
+/** warning **/
+.bg-warning { background-color : var(--ion-color-warning) !important; }
+.bg-warning-contrast { background-color : var(--ion-color-warning-contrast) !important; }
+.bg-warning-shade { background-color : var(--ion-color-warning-shade) !important; }
+.bg-warning-tint { background-color : var(--ion-color-warning-tint) !important; }
+
+/** danger **/
+.bg-danger { background-color : var(--ion-color-danger) !important; }
+.bg-danger-contrast { background-color : var(--ion-color-danger-contrast) !important; }
+.bg-danger-shade { background-color : var(--ion-color-danger-shade) !important; }
+.bg-danger-tint { background-color : var(--ion-color-danger-tint) !important; }
+
+/** dark **/
+.bg-dark { background-color : var(--ion-color-dark) !important; }
+.bg-dark-contrast { background-color : var(--ion-color-dark-contrast) !important; }
+.bg-dark-shade { background-color : var(--ion-color-dark-shade) !important; }
+.bg-dark-tint { background-color : var(--ion-color-dark-tint) !important; }
+
+/** medium **/
+.bg-medium { background-color : var(--ion-color-medium) !important; }
+.bg-medium-contrast { background-color : var(--ion-color-medium-contrast) !important; }
+.bg-medium-shade { background-color : var(--ion-color-medium-shade) !important; }
+.bg-medium-tint { background-color : var(--ion-color-medium-tint) !important; }
+
+/** light **/
+.bg-light { background-color : var(--ion-color-light) !important; }
+.bg-light-contrast { background-color : var(--ion-color-light-contrast) !important; }
+.bg-light-shade { background-color : var(--ion-color-light-shade) !important; }
+.bg-light-tint { background-color : var(--ion-color-light-tint) !important; }

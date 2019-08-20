@@ -1,0 +1,125 @@
+@import "../variables";
+
+html.ios {
+  font-size: 16px;
+}
+
+html.md {
+  font-size: 16px;
+}
+
+.font-size-10{font-size:10px;} //谷歌浏览器不起作用
+.font-size-12{font-size:12px;}
+.font-size-14{font-size:14px;}
+.font-size-16{font-size:16px;}
+.font-size-18{font-size:18px;}
+.font-size-20{font-size:20px;}
+.font-size-22{font-size:22px;}
+.font-size-24{font-size:24px;}
+.font-size-26{font-size:26px;}
+.font-size-28{font-size:28px;}
+.font-size-30{font-size:30px;}
+.font-size-32{font-size:32px;}
+.font-size-34{font-size:34px;}
+.font-size-36{font-size:36px;}
+.font-size-38{font-size:38px;}
+.font-size-40{font-size:40px;}
+
+
+/** theme **/
+.text-theme { color : var(--ion-color-theme) !important; }
+.text-theme-contrast { color : var(--ion-color-theme-contrast) !important; }
+.text-theme-shade { color : var(--ion-color-theme-shade) !important; }
+.text-theme-tint { color : var(--ion-color-theme-tint) !important; }
+
+
+/** primary **/
+.text-primary { color : var(--ion-color-primary) !important; }
+.text-primary-contrast { color : var(--ion-color-primary-contrast) !important; }
+.text-primary-shade { color : var(--ion-color-primary-shade) !important; }
+.text-primary-tint { color : var(--ion-color-primary-tint) !important; }
+
+/** secondary **/
+.text-secondary { color : var(--ion-color-secondary) !important; }
+.text-secondary-contrast { color : var(--ion-color-secondary-contrast) !important; }
+.text-secondary-shade { color : var(--ion-color-secondary-shade) !important; }
+.text-secondary-tint { color : var(--ion-color-secondary-tint) !important; }
+
+/** tertiary **/
+.text-tertiary { color : var(--ion-color-tertiary) !important; }
+.text-tertiary-contrast { color : var(--ion-color-tertiary-contrast) !important; }
+.text-tertiary-shade { color : var(--ion-color-tertiary-shade) !important; }
+.text-tertiary-tint { color : var(--ion-color-tertiary-tint) !important; }
+
+/** success **/
+.text-success { color : var(--ion-color-success) !important; }
+.text-success-contrast { color : var(--ion-color-success-contrast) !important; }
+.text-success-shade { color : var(--ion-color-success-shade) !important; }
+.text-success-tint { color : var(--ion-color-success-tint) !important; }
+
+/** warning **/
+.text-warning { color : var(--ion-color-warning) !important; }
+.text-warning-contrast { color : var(--ion-color-warning-contrast) !important; }
+.text-warning-shade { color : var(--ion-color-warning-shade) !important; }
+.text-warning-tint { color : var(--ion-color-warning-tint) !important; }
+
+/** danger **/
+.text-danger { color : var(--ion-color-danger) !important; }
+.text-danger-contrast { color : var(--ion-color-danger-contrast) !important; }
+.text-danger-shade { color : var(--ion-color-danger-shade) !important; }
+.text-danger-tint { color : var(--ion-color-danger-tint) !important; }
+
+/** dark **/
+.text-dark { color : var(--ion-color-dark) !important; }
+.text-dark-contrast { color : var(--ion-color-dark-contrast) !important; }
+.text-dark-shade { color : var(--ion-color-dark-shade) !important; }
+.text-dark-tint { color : var(--ion-color-dark-tint) !important; }
+
+/** medium **/
+.text-medium { color : var(--ion-color-medium) !important; }
+.text-medium-contrast { color : var(--ion-color-medium-contrast) !important; }
+.text-medium-shade { color : var(--ion-color-medium-shade) !important; }
+.text-medium-tint { color : var(--ion-color-medium-tint) !important; }
+
+/** light **/
+.text-light { color : var(--ion-color-light) !important; }
+.text-light-contrast { color : var(--ion-color-light-contrast) !important; }
+.text-light-shade { color : var(--ion-color-light-shade) !important; }
+.text-light-tint { color : var(--ion-color-light-tint) !important; }
+
+
+.font-bold{font-weight: bold}
+.font-bolder{font-weight: bolder}
+.font-italic{font-style: italic}
+.font-oblique{font-style: oblique}
+.font-overline{text-decoration: overline}
+.font-line-through{text-decoration: line-through}
+.font-line-underline{text-decoration: underline}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.font-italic {
+  font-style: italic !important;
+}

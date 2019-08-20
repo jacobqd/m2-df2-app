@@ -1,0 +1,58 @@
+<!--<ion-backdrop
+  [tappable]="false"
+  [visible]="false"
+  [stopPropagation]="false">
+</ion-backdrop>-->
+
+
+<ion-content>
+  <div class="modal-box display-flex justify-content-center align-items-center">
+
+    <div class="modal-container">
+      <div class="modal-header">
+        <p class="title1">{{ '发现新版本' }}</p>
+        <p class="title1">{{ title }}</p>
+        <p class="title2">v{{ remoteVersion}}</p>
+      </div>
+      <div class="modal-body">
+        {{ upgradeContent}}
+      </div>
+      <div class="modal-footer">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <ion-button class="enterBtn" mode='ios' color="primary" size="small" (click)="enterFun()"> 立即升级
+                </ion-button>
+              </ion-col>
+              <ion-col size="6">
+                <ion-button class="cleanBtn" mode='ios' color="primary" size="small" fill="outline"
+                            (click)="cancelFun()">
+                  残忍拒绝
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+
+
+        <!--进度条-->
+        <div class="progress-box" *ngIf="progressNum">
+          <div class="ion-text-center progress-text">
+            下载进度 {{ progressNum }}%
+          </div>
+
+          <div class="progress-bg">
+            <div class="progress-f" [ngStyle]="{'width':progressNum+'%'}">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+</ion-content>
